@@ -1,0 +1,21 @@
+{
+  "name": "apidemo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "tsnd --respawn src/index.ts",
+    "start:clus": "tsnd --respawn src/cluster.ts",
+    "dev": "nodemon --exec node --loader ts-node/esm src/index.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0"
+  }
+}
